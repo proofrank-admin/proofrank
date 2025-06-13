@@ -1,69 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>ProofRank – Global Work & Contribution Proof Protocol</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProofRank – Global Work Protocol</title>
   <style>
+    :root {
+      --bg: #0a0a0a;
+      --text: #f0f0f0;
+      --accent: #00d2ff;
+      --hash-bg: #1a1a1a;
+      --muted: #999;
+    }
+
     body {
       margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
       padding: 2rem;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f7f7f7;
-      color: #222;
     }
 
     .container {
-      max-width: 800px;
-      margin: auto;
+      max-width: 840px;
+      width: 100%;
       text-align: center;
     }
 
-    img.logo {
-      max-width: 220px;
+    .logo {
+      width: 180px;
       margin-bottom: 2rem;
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      font-size: 2.75rem;
+      font-weight: 700;
+      margin: 0 0 1rem;
+      color: var(--accent);
     }
 
-    p {
-      font-size: 1.2rem;
-      line-height: 1.6;
+    p.description {
+      font-size: 1.25rem;
+      line-height: 1.8;
+      color: var(--muted);
+      margin: 0 0 3rem;
     }
 
-    .anchor-hash {
-      background: #eee;
-      padding: 1rem;
-      margin: 2rem 0;
-      font-family: monospace;
+    .hash-label {
+      font-weight: 500;
       font-size: 0.95rem;
-      word-break: break-all;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+
+    .hash-box {
+      background: var(--hash-bg);
+      padding: 1rem 1.5rem;
+      font-family: monospace;
+      font-size: 0.92rem;
+      border-radius: 6px;
+      word-break: break-word;
+      margin-bottom: 2rem;
+      border: 1px solid #222;
     }
 
     footer {
       margin-top: 3rem;
-      font-size: 0.85rem;
-      color: #888;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p.description {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="logo.png" alt="ProofRank logo" class="logo">
+    <img src="logo.png" alt="ProofRank logo" class="logo" />
     <h1>ProofRank</h1>
-    <p>The Global Protocol for Work & Contribution Proof — across roles, timezones, and technologies.</p>
-    <p>Designed for moonlighters, quiet performers, post-layoff contributors, and visa applicants.</p>
-
-    <h2>Public Protocol Anchor</h2>
-    <div class="anchor-hash">
+    <p class="description">
+      The trust protocol for verifying global contribution. Built for moonlighters, post-layoff talent, and every quiet achiever with no proof — until now.
+    </p>
+    <div class="hash-label">Protocol Anchor Hash</div>
+    <div class="hash-box">
       fe9d57761513ba0bbd049841915f342e2ea5fe1b0f996138eb7f6cce1195c68a
     </div>
-    <p>This hash proves protocol originality and timestamp.</p>
-
-    <footer>© 2025 ProofRank.org</footer>
+    <footer>
+      © 2025 ProofRank.org — Timestamped. Unclonable. Built in silence.<br/>
+    </footer>
   </div>
 </body>
 </html>
